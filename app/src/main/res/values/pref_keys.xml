@@ -1,0 +1,7 @@
+<resources>
+    <string name="pref_gallery_section">pref_gallery_section</string>
+    <string name="pref_include_viral_image">pref_include_viral_image</string>
+    <string name="pref_window">pref_window</string>
+    <string name="pref_sort">pref_sort</string>
+    <string name="pref_rec_view_layout">pref_rec_view_layout</string>
+</resources>

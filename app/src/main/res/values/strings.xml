@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="title_home">Home</string>
+    <string name="title_image_view">Image View</string>
+    <string name="title_about">About</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="staggered_grid">Staggered Grid</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="upvotes">Upvotes: %1s</string>
+    <string name="score">Score: %1s</string>
+    <string name="downvotes">Downvotes: %1s</string>
+    <string name="about_screen_info">Version: %1s \nDevelopment time: 20 hours\n<a href="linkedin://profile/gercho">Author: %2s</a></string>
+    <string name="author_name">Gercho Atanasov</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_gallery_section">Gallery Section</string>
+    <string name="summary_gallery_section">Select gallery section</string>
+    <string name="title_include_viral_images">Include Viral Images</string>
+
+    <string name="title_window">Window</string>
+    <string name="summary_window">Select window</string>
+
+    <string name="title_sort">Sort By</string>
+    <!-- Strings related to Settings -->
+    <string-array name="pref_gallery_sections">
+        <item name="hot">hot</item>
+        <item name="top">top</item>
+        <item name="user">user</item>
+    </string-array>
+    <string-array name="pref_window">
+        <item name="day">day</item>
+        <item name="week">week</item>
+        <item name="month">month</item>
+        <item name="year">year</item>
+        <item name="all">all</item>
+    </string-array>
+    <string-array name="pref_sort">
+        <item name="viral">viral</item>
+        <item name="top">top</item>
+        <item name="time">time</item>
+    </string-array>
+
+</resources>

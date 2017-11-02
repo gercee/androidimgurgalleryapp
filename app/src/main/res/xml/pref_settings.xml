@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <ListPreference
+        android:defaultValue="hot"
+        android:entries="@array/pref_gallery_sections"
+        android:entryValues="@array/pref_gallery_sections"
+        android:key="@string/pref_gallery_section"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/summary_gallery_section"
+        android:title="@string/title_gallery_section" />
+
+    <SwitchPreference
+        android:key="@string/pref_include_viral_image"
+        android:defaultValue="true"
+        android:title="@string/title_include_viral_images"
+        ></SwitchPreference>
+
+    <ListPreference
+        android:defaultValue="day"
+        android:entries="@array/pref_window"
+        android:entryValues="@array/pref_window"
+        android:key="@string/pref_window"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:summary="@string/summary_window"
+        android:title="@string/title_window" />
+
+    <ListPreference
+        android:defaultValue="viral"
+        android:entries="@array/pref_sort"
+        android:entryValues="@array/pref_sort"
+        android:key="@string/pref_sort"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/title_sort" />
+
+</PreferenceScreen>
