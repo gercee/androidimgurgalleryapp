@@ -37,8 +37,6 @@ class MainActivity : BaseActivity(), MainView{
 
     private val LOG_TAG = this@MainActivity::class.java.name;
 
-    private val mGalleryHandler by lazy { GalleryHandler() }
-
     private var mStaggeredGridLayoutManager: StaggeredGridLayoutManager = StaggeredGridLayoutManager(2, 1)
 
     private var mGridLayoutManager: GridLayoutManager = GridLayoutManager(this@MainActivity,2)
@@ -63,13 +61,13 @@ class MainActivity : BaseActivity(), MainView{
         setContentView(R.layout.activity_main)
         Log.d(LOG_TAG, "onCreate()")
 
+        mainPresenter = MainPresenterImpl(this@MainActivity)
         setSupportActionBar(toolbar)
         initParameters()
         initRecyclerView()
         initGridTypeButtons()
         requestNews()
 
-        mainPresenter = MainPresenterImpl(this@MainActivity)
     }
 
     fun initRecyclerView(){
@@ -157,10 +155,7 @@ class MainActivity : BaseActivity(), MainView{
 
     private fun requestNews() {
 
-        mGalleryHandler.getGalleries(mSection,mSort,mWindow,mShowViral)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe (GalleryRequestObserver(this@MainActivity))
+        mainPresenter.getGalleryItems(mSection, mSort, mWindow, mShowViral)
 
     }
 

@@ -9,4 +9,5 @@ interface MainPresenter {
     fun onResume()
     fun onDestroy()
     fun onItemClicked(galleryItem: ImgurGalleryItem)
+    fun getGalleryItems(mSection: String, mSort: String, mWindow: String, mShowViral: Boolean)
 }

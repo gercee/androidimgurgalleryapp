@@ -17,4 +17,5 @@ interface MainView : View {
     fun showImageView(item : ImgurGalleryItem)
 
     fun subscriveDisposable(d: Disposable)
+
 }
